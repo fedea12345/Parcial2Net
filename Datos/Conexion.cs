@@ -23,7 +23,7 @@ namespace Datos
         }
         protected void OpenConnection()
         {
-            SqlConnection sqlConn = new SqlConnection("DataSource=FEDE-PC\\SQLEXPRESS;InitialCatalog=Parcial;Integral Security = true");
+            SqlConnection sqlConn = new SqlConnection("Data Source=FEDE-PC\\SQLEXPRESS;Initial Catalog=Parcial;Integrated Security=True");
             sqlConn.Open();
         }
         protected void CloseConnection()

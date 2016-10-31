@@ -14,7 +14,7 @@ namespace Alberti.Entity
         private int _Edad;
         private DateTime _FechaNacimiento;
         private int _Id;
-        private Decimal _NotaPromedio;
+        private double _NotaPromedio;
         #endregion
 
         #region Propiedades
@@ -42,7 +42,7 @@ namespace Alberti.Entity
             get { return _Id; }
             set { _Id = value; }
         }
-        public Decimal NotaPromedio
+        public double NotaPromedio
         {
             get { return _NotaPromedio; }
             set { _NotaPromedio = value; }
@@ -50,7 +50,7 @@ namespace Alberti.Entity
         #endregion
 
         #region Overloads   
-        public Alumno(string VarApellidoNombre,string varDni,DateTime varFechaNacimiento,int varId, Decimal varNotaPromedio)
+        public Alumno(string VarApellidoNombre,string varDni,DateTime varFechaNacimiento,int varId, double varNotaPromedio)
         {
             ApellidoNombre = VarApellidoNombre;
             Dni = varDni;

@@ -44,7 +44,7 @@ namespace Escritorio
             int idseleccionado = (int)comboBox1.SelectedValue;
             Datos.Alumno buscaAlum = new Datos.Alumno();
             Alberti.Entity.Alumno buscado = buscaAlum.getOne(idseleccionado);
-            MessageBox.Show(buscado.ApellidoNombre + "/n" + buscado.Dni + "/n" + buscado.Edad.ToString() + "/n" + buscado.FechaNacimiento.ToString() + "/n" + buscado.NotaPromedio.ToString());
+            MessageBox.Show(buscado.ApellidoNombre + " " + buscado.Dni + Environment.NewLine + buscado.Edad.ToString() + Environment.NewLine  + buscado.FechaNacimiento.ToString() + Environment.NewLine  + buscado.NotaPromedio.ToString());
 
         }
     }
